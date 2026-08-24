@@ -108,12 +108,320 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: BocetpsStoryboard_0
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 3254
+        width: 300
+        height: 690
+      alignment: 9
+      pivot: {x: -3.1526718, y: -3.2397625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f658c775cc7b4ac398b6e6c75e92ead
+      internalID: 102932551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BocetpsStoryboard_1
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 3564
+        width: 363
+        height: 327
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55abc9cd544bd4542ba6570e802bcdbb
+      internalID: -1581844042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BocetpsStoryboard_2
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 3025
+        width: 336
+        height: 424
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b87eca3c9e614a028d8a2a639d3905a
+      internalID: 991002588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BocetpsStoryboard_3
+      rect:
+        serializedVersion: 2
+        x: 1173
+        y: 3068
+        width: 813
+        height: 769
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d9da35b8c23c4f2ab88dd1c0b7c2a05
+      internalID: -1764833820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BocetpsStoryboard_4
+      rect:
+        serializedVersion: 2
+        x: 2021
+        y: 3281
+        width: 257
+        height: 344
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57cd09eb5cf33436293a64ea4a4c6040
+      internalID: -10566502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BocetpsStoryboard_5
+      rect:
+        serializedVersion: 2
+        x: 2234
+        y: 2777
+        width: 565
+        height: 592
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: decd1f56b4af54586b516480ffe3d36d
+      internalID: 1112407427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BocetpsStoryboard_6
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 1761
+        width: 388
+        height: 1025
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d54518d7592a94ccc8c76b4327683c62
+      internalID: 816293890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BocetpsStoryboard_7
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 2512
+        width: 389
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 170e79b8c44ce4c2585aa078443ea468
+      internalID: 1682726684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BocetpsStoryboard_8
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 2415
+        width: 176
+        height: 336
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c98da2a6c279a4ebbb13e2b0a51140c8
+      internalID: 120878565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BocetpsStoryboard_9
+      rect:
+        serializedVersion: 2
+        x: 1606
+        y: 2424
+        width: 247
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf3c79bd91d094d8db8093bdcbdb6a4d
+      internalID: -42672629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BocetpsStoryboard_10
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 815
+        width: 1069
+        height: 919
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 978cc94f4a4df4beab226c50e7001798
+      internalID: -720114891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BocetpsStoryboard_11
+      rect:
+        serializedVersion: 2
+        x: 1491
+        y: 1531
+        width: 1034
+        height: 893
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45dd1929c911846e9bd2aa388536f35d
+      internalID: -262406507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BocetpsStoryboard_12
+      rect:
+        serializedVersion: 2
+        x: 2543
+        y: 1292
+        width: 1502
+        height: 999
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caaa954023b794884bcce296d870e223
+      internalID: -1459986665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BocetpsStoryboard_13
+      rect:
+        serializedVersion: 2
+        x: 2340
+        y: 241
+        width: 1140
+        height: 1151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9be208c916f8a42f2aa9cc9ca40e8c09
+      internalID: -669769900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 500a78766e1cb436a9451c11b2749b0b
     internalID: 0
     vertices: []
     indices: 
@@ -122,7 +430,21 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      BocetpsStoryboard_0: 102932551
+      BocetpsStoryboard_1: -1581844042
+      BocetpsStoryboard_10: -720114891
+      BocetpsStoryboard_11: -262406507
+      BocetpsStoryboard_12: -1459986665
+      BocetpsStoryboard_13: -669769900
+      BocetpsStoryboard_2: 991002588
+      BocetpsStoryboard_3: -1764833820
+      BocetpsStoryboard_4: -10566502
+      BocetpsStoryboard_5: 1112407427
+      BocetpsStoryboard_6: 816293890
+      BocetpsStoryboard_7: 1682726684
+      BocetpsStoryboard_8: 120878565
+      BocetpsStoryboard_9: -42672629
   mipmapLimitGroupName: 
   pSDRemoveMatte: 1
   userData: 
