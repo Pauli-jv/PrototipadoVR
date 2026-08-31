@@ -250,8 +250,8 @@ TextureImporter:
         width: 388
         height: 1025
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 116}
       customData: 
       outline: []
       physicsShape: []
@@ -272,7 +272,7 @@ TextureImporter:
         width: 389
         height: 318
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -294,7 +294,7 @@ TextureImporter:
         width: 176
         height: 336
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -316,7 +316,7 @@ TextureImporter:
         width: 247
         height: 327
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -333,12 +333,12 @@ TextureImporter:
       name: BocetpsStoryboard_10
       rect:
         serializedVersion: 2
-        x: 148
-        y: 815
+        x: 67
+        y: 700
         width: 1069
         height: 919
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -360,7 +360,7 @@ TextureImporter:
         width: 1034
         height: 893
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -382,7 +382,7 @@ TextureImporter:
         width: 1502
         height: 999
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -404,7 +404,7 @@ TextureImporter:
         width: 1140
         height: 1151
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -413,6 +413,182 @@ TextureImporter:
       bones: []
       spriteID: 9be208c916f8a42f2aa9cc9ca40e8c09
       internalID: -669769900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BocetpsStoryboard_14
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 1964
+        width: 919
+        height: 427
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93e4daad823bf45b88bc834b98ae50dd
+      internalID: -1675243164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BocetpsStoryboard_15
+      rect:
+        serializedVersion: 2
+        x: 1199
+        y: 248
+        width: 553
+        height: 919
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf83b23fdaff74df4b1ca8ebad9e9345
+      internalID: 481294492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BocetpsStoryboard_16
+      rect:
+        serializedVersion: 2
+        x: 1795
+        y: 20
+        width: 1659
+        height: 667
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b2386af36bc84b9b8fc2f0bb714001e
+      internalID: -1849613967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BocetpsStoryboard_17
+      rect:
+        serializedVersion: 2
+        x: 2973
+        y: 3190
+        width: 710
+        height: 782
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4f6433826f20450e80234ebc227282a
+      internalID: 1311058212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BocetpsStoryboard_18
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 1210
+        width: 1094
+        height: 366
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4fda32ccb14a47dabdf7ffaee766789
+      internalID: -1084446847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BocetpsStoryboard_19
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 2943
+        width: 731
+        height: 431
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95d033777f303488189598b3ba86ccef
+      internalID: -1403778972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BocetpsStoryboard_20
+      rect:
+        serializedVersion: 2
+        x: 2379
+        y: 3340
+        width: 574
+        height: 601
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e498b3e809e841c3aa79668008e2952
+      internalID: 1630217583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BocetpsStoryboard_21
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 2636
+        width: 745
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb0c9e40affa74cd3a932831313f9813
+      internalID: 1571742221
       vertices: []
       indices: 
       edges: []
@@ -437,7 +613,15 @@ TextureImporter:
       BocetpsStoryboard_11: -262406507
       BocetpsStoryboard_12: -1459986665
       BocetpsStoryboard_13: -669769900
+      BocetpsStoryboard_14: -1675243164
+      BocetpsStoryboard_15: 481294492
+      BocetpsStoryboard_16: -1849613967
+      BocetpsStoryboard_17: 1311058212
+      BocetpsStoryboard_18: -1084446847
+      BocetpsStoryboard_19: -1403778972
       BocetpsStoryboard_2: 991002588
+      BocetpsStoryboard_20: 1630217583
+      BocetpsStoryboard_21: 1571742221
       BocetpsStoryboard_3: -1764833820
       BocetpsStoryboard_4: -10566502
       BocetpsStoryboard_5: 1112407427
