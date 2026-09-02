@@ -135,10 +135,10 @@ TextureImporter:
       name: elementos unity 2_1
       rect:
         serializedVersion: 2
-        x: 1573
-        y: 2565
-        width: 350
-        height: 772
+        x: 1269
+        y: 2716
+        width: 349
+        height: 771
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,35 +154,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: elementos unity 2_2
-      rect:
-        serializedVersion: 2
-        x: 2648
-        y: 3040
-        width: 960
-        height: 475
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 62153221082f20043aac9a63caab10e6
-      internalID: -786881123
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: elementos unity 2_3
       rect:
         serializedVersion: 2
-        x: 269
-        y: 1331
-        width: 1847
-        height: 672
+        x: 2761
+        y: 3165
+        width: 961
+        height: 475
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -201,6 +179,116 @@ TextureImporter:
       name: elementos unity 2_4
       rect:
         serializedVersion: 2
+        x: 2538
+        y: 2444
+        width: 576
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6e1701180f6ef34897c71cc23c0e20d
+      internalID: -1488449922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elementos unity 2_5
+      rect:
+        serializedVersion: 2
+        x: 3110
+        y: 2444
+        width: 252
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0194c472d6ff5a94aa04d024376f2c19
+      internalID: 1291833060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elementos unity 2_6
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 1331
+        width: 1847
+        height: 672
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1adbf57176a3a704393eeed21072a587
+      internalID: 1732139292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elementos unity 2_7
+      rect:
+        serializedVersion: 2
+        x: 2505
+        y: 1091
+        width: 515
+        height: 1193
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be06b270421534543b1335fb280fc2c9
+      internalID: -172703154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elementos unity 2_8
+      rect:
+        serializedVersion: 2
+        x: 3359
+        y: 1093
+        width: 329
+        height: 990
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 053a5aa7ddef06744beecafc4c421bd5
+      internalID: -582169347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elementos unity 2_9
+      rect:
+        serializedVersion: 2
         x: 339
         y: 331
         width: 693
@@ -213,8 +301,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c6e1701180f6ef34897c71cc23c0e20d
-      internalID: -1488449922
+      spriteID: 45f0968967f4c704189417522d89b5da
+      internalID: -1666201635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elementos unity 2_10
+      rect:
+        serializedVersion: 2
+        x: 1386
+        y: 323
+        width: 1228
+        height: 750
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a2d2824b8e3f7344b4a3eaa872a0178
+      internalID: -1430415194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elementos unity 2_11
+      rect:
+        serializedVersion: 2
+        x: 2792
+        y: 272
+        width: 643
+        height: 525
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 144afc24800b8de44869ec851e54bac5
+      internalID: -1805119712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elementos unity 2_2
+      rect:
+        serializedVersion: 2
+        x: 1882
+        y: 2716
+        width: 615
+        height: 890
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d936ca9534ad654882fcc1cf1753b68
+      internalID: -786881123
       vertices: []
       indices: 
       edges: []
@@ -237,9 +391,16 @@ TextureImporter:
     nameFileIdTable:
       elementos unity 2_0: 1600741104
       elementos unity 2_1: 538250373
+      elementos unity 2_10: -1430415194
+      elementos unity 2_11: -1805119712
       elementos unity 2_2: -786881123
       elementos unity 2_3: -1251508246
       elementos unity 2_4: -1488449922
+      elementos unity 2_5: 1291833060
+      elementos unity 2_6: 1732139292
+      elementos unity 2_7: -172703154
+      elementos unity 2_8: -582169347
+      elementos unity 2_9: -1666201635
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
