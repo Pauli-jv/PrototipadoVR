@@ -3,7 +3,97 @@ guid: 6d5ac774d7e2c514cae4ae7a49b9af10
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Cafetera_Calados_amarillo_BaseColor
+    second: {fileID: 2800000, guid: a1a79aa845c282b4ab7816138dab519b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Cafetera_Calados_amarillo_Normal
+    second: {fileID: 2800000, guid: 471fa07124af4ed47a959516a7139477, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Cafetera_Chambrana_roja_BaseColor
+    second: {fileID: 2800000, guid: 253781193f3c50245b193c3725424195, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Cafetera_Chambrana_roja_Normal
+    second: {fileID: 2800000, guid: 44b03ffad7add3f4180c778dfd5e4b81, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Cafetera_Columnas_rojo_BaseColor
+    second: {fileID: 2800000, guid: a611e85b87572b14f90fa99dca773fc0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Cafetera_Columnas_rojo_Normal
+    second: {fileID: 2800000, guid: f5e0e4f0275f6b04ea3bba9c688f59e0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Cafetera_Manijas_cafe_BaseColor
+    second: {fileID: 2800000, guid: f44e7a265089f4d4db6dd9f852eef3b2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Cafetera_Manijas_cafe_Normal
+    second: {fileID: 2800000, guid: 08e45a1748a8d4445b817bb35505f772, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Cafetera_Marcos_ventanas_rojo_BaseColor
+    second: {fileID: 2800000, guid: 707681547ddb1474d9f6e4df47a134d3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Cafetera_Marcos_ventanas_rojo_Normal
+    second: {fileID: 2800000, guid: d3132db6a792ff74ab19cb5997decb23, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Cafetera_Piso_ladrillo_BaseColor
+    second: {fileID: 2800000, guid: 4cd293010764cce439fae89347b0d0fe, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Cafetera_Piso_ladrillo_Normal
+    second: {fileID: 2800000, guid: 36078806f644d6e4cb4b5e937735eebe, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Cafetera_Puertas_paneles_rojo_oscuro_BaseColor
+    second: {fileID: 2800000, guid: 1c744e7d6017de5458979057a6b51114, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Cafetera_Puertas_paneles_rojo_oscuro_Normal
+    second: {fileID: 2800000, guid: 4d2ebffc7e1b7a9449755e5733ae841b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Cafetera_Puertas_rojo_BaseColor
+    second: {fileID: 2800000, guid: b8abc09773be7c248becf88b4f67981e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Cafetera_Puertas_rojo_Normal
+    second: {fileID: 2800000, guid: 48473dc746fe01a4cb5f511a1ab5fd4a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Cafetera_Teja_desgastada_BaseColor
+    second: {fileID: 2800000, guid: f19b4129e0bae6b4ebc0f2bc59c812ad, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Cafetera_Teja_desgastada_Normal
+    second: {fileID: 2800000, guid: 8c69c4a7cfa642b4986f1c1eac1c2408, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
