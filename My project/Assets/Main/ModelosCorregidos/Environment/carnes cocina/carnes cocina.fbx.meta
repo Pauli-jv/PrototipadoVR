@@ -1,14 +1,9 @@
 fileFormatVersion: 2
-guid: dbb5874c11f0d79469f56d90f86ac540
+guid: 4913aa292afaa2a4eb04fa3eb8a4f825
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Carne_BaseColor
-    second: {fileID: 2800000, guid: 217d47e66b2ebfa40a3900945232f897, type: 3}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
