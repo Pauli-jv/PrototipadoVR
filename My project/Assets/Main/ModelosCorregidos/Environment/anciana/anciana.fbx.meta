@@ -3,7 +3,47 @@ guid: 3319f370a04730b44b20b3b17245abf3
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Anciana_Blusa_Azul
+    second: {fileID: 2100000, guid: 564e1a49ad68d1e42affe82de0eaf121, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Anciana_Boca
+    second: {fileID: 2100000, guid: e3b47e81c2877214d9feb3bb40c31b7b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Anciana_Cabello
+    second: {fileID: 2100000, guid: 5a380178d3d18be479e307ee70b8c21a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Anciana_Cejas
+    second: {fileID: 2100000, guid: 91ad5f2c1bfa9c04c8df8a9eb0d7a293, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Anciana_Delantal_Cuadros
+    second: {fileID: 2100000, guid: 5d0a6a6a709a1a2419df81c49bd9bc50, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Anciana_Ojos
+    second: {fileID: 2100000, guid: ebabdee933472e5459169a1df06e5b93, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Anciana_Piel
+    second: {fileID: 2100000, guid: dff5d3723a794fd4d98fb3259d16526d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Anciana_Sandalias
+    second: {fileID: 2100000, guid: 0d61a9d9e5d60164ea4b28928ba47102, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
