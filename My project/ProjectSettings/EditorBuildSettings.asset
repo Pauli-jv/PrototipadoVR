@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Main/Scenes/Terreno.unity
-    guid: 7794f4ed2a6f7624b9a6a2d7ac78ef61
+    path: Assets/Main/Desarollo/Levels/Scenes/Terreno_Dev.unity
+    guid: 08a7f2ce562b17e438e9030be46b8b21
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 4e9c457dd2a87ac48aafe227c6a89105, type: 2}
