@@ -31659,7 +31659,7 @@ MonoBehaviour:
   tutorialVideo: {fileID: 1517377902}
   mapImage: {fileID: 2058290688}
   videoImage: {fileID: 1517377899}
-  panelDistance: 1.5
+  panelDistance: 0.8
   mapDestinations:
   - {fileID: 773036865}
   - {fileID: 598084545}

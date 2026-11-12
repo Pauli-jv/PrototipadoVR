@@ -30,7 +30,7 @@ public sealed class CollectionProgress : MonoBehaviour
     {
         homeButton.interactable = false;
         foreach (var entry in ingredients)
-            if (entry.checklist) { entry.checklist.SetIsOnWithoutNotify(false); entry.checklist.interactable = false; }
+            UpdateChecklist(entry, false);
     }
 
     public void Deposited(string ingredient)
@@ -38,7 +38,7 @@ public sealed class CollectionProgress : MonoBehaviour
         if (notification) effects.PlayOneShot(notification);
         var entry = Array.Find(ingredients, item => item.ingredient == ingredient);
         if (entry == null || !collected.Add(ingredient)) return;
-        if (entry.checklist) entry.checklist.SetIsOnWithoutNotify(true);
+        UpdateChecklist(entry, true);
         foreach (var clip in entry.clips) if (clip) pending.Enqueue(clip);
         if (AllCollected)
         {
@@ -46,6 +46,17 @@ public sealed class CollectionProgress : MonoBehaviour
             if (collectionFinished) pending.Enqueue(collectionFinished);
         }
         if (playback == null) playback = StartCoroutine(PlayQueue());
+    }
+
+    private static void UpdateChecklist(IngredientDialogue entry, bool deposited)
+    {
+        if (!entry.checklist) return;
+        entry.checklist.SetIsOnWithoutNotify(deposited);
+        entry.checklist.interactable = false;
+        foreach (var label in entry.checklist.GetComponentsInChildren<TMPro.TMP_Text>(true))
+            label.fontStyle = deposited
+                ? label.fontStyle | TMPro.FontStyles.Strikethrough
+                : label.fontStyle & ~TMPro.FontStyles.Strikethrough;
     }
 
     private IEnumerator PlayQueue()
