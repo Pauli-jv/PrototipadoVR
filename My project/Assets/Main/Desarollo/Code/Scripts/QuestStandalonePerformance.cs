@@ -15,8 +15,10 @@ public sealed class QuestStandalonePerformance : MonoBehaviour
         Application.targetFrameRate = 72;
         QualitySettings.vSyncCount = 0;
         if (OVRManager.display != null) OVRManager.display.displayFrequency = 72f;
-        OVRManager.foveatedRenderingLevel = OVRManager.FoveatedRenderingLevel.Medium;
-        OVRManager.useDynamicFoveatedRendering = true;
+        // Keep peripheral detail stable: dynamic foveation can expose blocky tiles
+        // at the edges of the view, especially while the player turns their head.
+        OVRManager.useDynamicFoveatedRendering = false;
+        OVRManager.foveatedRenderingLevel = OVRManager.FoveatedRenderingLevel.Off;
         foreach (var camera in FindObjectsByType<Camera>(FindObjectsInactive.Include, FindObjectsSortMode.None))
         {
             camera.allowHDR = false;

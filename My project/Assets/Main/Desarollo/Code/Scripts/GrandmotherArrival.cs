@@ -15,6 +15,11 @@ public sealed class GrandmotherArrival : MonoBehaviour
     public JourneyPanel journal;
     public float fadeSeconds = 0.7f;
     public CookingSequence cooking;
+    public Transform introductionStart;
+    public Transform introductionScreens;
+    public Transform welcomeScreen;
+    public float introductionPanelWorldHeight = 6f;
+    private bool introductionLocked;
     private bool started;
     private bool locked;
     private bool mapMovementLocked;
@@ -22,6 +27,45 @@ public sealed class GrandmotherArrival : MonoBehaviour
     private bool[] connectionStates;
     public bool DialogueFinished { get; private set; }
     public bool IsTransitioning => locked;
+
+    private void Awake()
+    {
+        introductionLocked = introductionStart != null;
+        RefreshLocomotionLock();
+    }
+
+    private IEnumerator Start()
+    {
+        if (!introductionStart) yield break;
+        yield return null;
+        yield return null;
+        if (Application.platform == RuntimePlatform.Android)
+        {
+            float deadline = Time.realtimeSinceStartup + 5f;
+            var head = UnityEngine.XR.InputDevices.GetDeviceAtXRNode(UnityEngine.XR.XRNode.Head);
+            while (Time.realtimeSinceStartup < deadline &&
+                (!head.TryGetFeatureValue(UnityEngine.XR.CommonUsages.isTracked, out bool tracked) || !tracked))
+            {
+                yield return null;
+                head = UnityEngine.XR.InputDevices.GetDeviceAtXRNode(UnityEngine.XR.XRNode.Head);
+            }
+        }
+        if (started) yield break;
+        locomotor.HandleLocomotionEvent(new LocomotionEvent(0,
+            new Pose(introductionStart.position, introductionStart.rotation),
+            LocomotionEvent.TranslationType.Absolute, LocomotionEvent.RotationType.Absolute));
+        yield return null;
+        yield return null;
+        if (introductionScreens && welcomeScreen)
+        {
+            Vector3 forward = Vector3.ProjectOnPlane(introductionStart.forward, Vector3.up).normalized;
+            float yaw = Vector3.SignedAngle(welcomeScreen.forward, forward, Vector3.up);
+            introductionScreens.RotateAround(welcomeScreen.position, Vector3.up, yaw);
+            Vector3 panelPosition = introductionStart.position + forward * 0.7f;
+            panelPosition.y = introductionPanelWorldHeight;
+            introductionScreens.position += panelPosition - welcomeScreen.position;
+        }
+    }
 
     public void TeleportTo(Transform target)
     {
@@ -60,6 +104,7 @@ public sealed class GrandmotherArrival : MonoBehaviour
             return;
         }
         started = true;
+        introductionLocked = false;
         StartCoroutine(Arrival());
     }
 
@@ -109,7 +154,7 @@ public sealed class GrandmotherArrival : MonoBehaviour
 
     private void RefreshLocomotionLock()
     {
-        bool shouldLock = locked || mapMovementLocked;
+        bool shouldLock = locked || mapMovementLocked || introductionLocked;
         if (shouldLock == movementStateCaptured || !locomotor) return;
         if (!shouldLock)
         {
@@ -150,6 +195,7 @@ public sealed class GrandmotherArrival : MonoBehaviour
         if (voice) voice.Stop();
         if (screenFade) screenFade.SetExplicitFade(0f);
         mapMovementLocked = false;
+        introductionLocked = false;
         RestoreLocomotion();
     }
 }
