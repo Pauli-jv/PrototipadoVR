@@ -21,13 +21,22 @@ public sealed class JourneyPanel : MonoBehaviour
     [Min(0.5f)] public float panelDistance = 1.5f;
     public Transform[] mapDestinations = new Transform[5];
     public TMPro.TMP_Text footer;
+    public CollectionProgress collection;
+    public Transform homeDestination;
+    public UnityEngine.UI.Button homeButton;
+    public Texture2D cachedMap;
 
     private void Awake()
     {
-        mapTexture = new RenderTexture(1024, 1024, 16);
-        mapTexture.name = "Mapa del terreno";
-        mapCamera.targetTexture = mapTexture;
-        mapImage.texture = mapTexture;
+        mapCamera.enabled = false;
+        if (cachedMap) mapImage.texture = cachedMap;
+        else
+        {
+            mapTexture = new RenderTexture(512, 512, 16);
+            mapTexture.name = "Mapa del terreno";
+            mapCamera.targetTexture = mapTexture;
+            mapImage.texture = mapTexture;
+        }
         videoTexture = new RenderTexture(640, 360, 0);
         videoTexture.name = "Tutorial de poses Meta";
         tutorialVideo.targetTexture = videoTexture;
@@ -39,8 +48,8 @@ public sealed class JourneyPanel : MonoBehaviour
 
     public void Unlock() { unlocked = true; }
 
-    // Connected to the unmodified Meta ThumbsUpPose selector on both hands.
-    public void OnThumbsUp()
+    // Connected to Meta's ThumbsDownPose on both hands.
+    public void OnThumbsDown()
     {
         if (!unlocked || arrival.IsTransitioning || Time.unscaledTime < nextGestureTime) return;
         nextGestureTime = Time.unscaledTime + 0.8f;
@@ -50,6 +59,9 @@ public sealed class JourneyPanel : MonoBehaviour
         panel.SetActive(true);
         ShowIngredients();
     }
+
+    // Retained for older editor setup helpers; the scene uses Thumbs Down.
+    public void OnThumbsUp() { OnThumbsDown(); }
 
     public void Close()
     {
@@ -61,7 +73,7 @@ public sealed class JourneyPanel : MonoBehaviour
     public void ShowIngredients()
     {
         arrival.SetMapLocomotionBlocked(false);
-        if (footer) footer.text = "Marca los ingredientes que ya recogiste · Pulgar arriba para abrir o cerrar";
+        if (footer) footer.text = "Guarda cada ingrediente en su canasta · Pulgar abajo para abrir o cerrar";
         ingredientsPage.SetActive(true);
         mapPage.SetActive(false);
         mapCamera.gameObject.SetActive(false);
@@ -70,10 +82,11 @@ public sealed class JourneyPanel : MonoBehaviour
     public void ShowMap()
     {
         arrival.SetMapLocomotionBlocked(true);
-        if (footer) footer.text = "Selecciona un ingrediente para viajar · Pulgar arriba para abrir o cerrar";
+        if (footer) footer.text = "Selecciona un destino · Casa se habilita al completar la recolección";
         ingredientsPage.SetActive(false);
         mapPage.SetActive(true);
         mapCamera.gameObject.SetActive(true);
+        if (!cachedMap) mapCamera.Render();
     }
 
     // Order in the inspector: Yuca, Papa, Cilantro, Mazorca, Carne.
@@ -81,6 +94,11 @@ public sealed class JourneyPanel : MonoBehaviour
     {
         if (!unlocked || index < 0 || index >= mapDestinations.Length) return;
         arrival.TeleportTo(mapDestinations[index]);
+    }
+
+    public void TravelHome()
+    {
+        if (unlocked && collection && collection.AllCollected) arrival.TeleportTo(homeDestination);
     }
 
     private void LateUpdate()

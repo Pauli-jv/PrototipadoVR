@@ -11,11 +11,14 @@ public sealed class InteractableGlow : MonoBehaviour
     public SnapInteractor snapInteractor;
     public HandGrabInteractable[] handGrabs;
     public GrabInteractable[] controllerGrabs;
+    public bool HighlightEnabled = true;
+    private CollectibleIngredient collectible;
     private readonly List<Renderer> outlines = new List<Renderer>();
     public bool OutlineVisible { get; private set; }
 
     private void Awake()
     {
+        collectible = GetComponent<CollectibleIngredient>();
         if (!outlineMaterial) return;
         // Reuse each original mesh; add only a visual shell, with no extra collider.
         foreach (var source in GetComponentsInChildren<MeshFilter>(true))
@@ -32,6 +35,7 @@ public sealed class InteractableGlow : MonoBehaviour
             renderer.sharedMaterials = materials;
             renderer.shadowCastingMode = ShadowCastingMode.Off;
             renderer.receiveShadows = false;
+            renderer.enabled = false;
             outlines.Add(renderer);
         }
     }
@@ -44,11 +48,12 @@ public sealed class InteractableGlow : MonoBehaviour
             if (hand && hand.State == InteractableState.Select) selected = true;
         foreach (var controller in controllerGrabs)
             if (controller && controller.State == InteractableState.Select) selected = true;
-        SetVisible(!selected);
+        SetVisible(HighlightEnabled && !selected && (!collectible || (collectible.Available && !collectible.Stored)));
     }
 
     private void SetVisible(bool visible)
     {
+        if (OutlineVisible == visible) return;
         OutlineVisible = visible;
         foreach (var outline in outlines) if (outline) outline.enabled = visible;
     }

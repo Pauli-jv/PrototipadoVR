@@ -14,6 +14,7 @@ public sealed class GrandmotherArrival : MonoBehaviour
     public GameObject gestureHint;
     public JourneyPanel journal;
     public float fadeSeconds = 0.7f;
+    public CookingSequence cooking;
     private bool started;
     private bool locked;
     private bool mapMovementLocked;
@@ -34,6 +35,8 @@ public sealed class GrandmotherArrival : MonoBehaviour
         journal.Close();
         yield return TeleportUnderBlack(target);
         RestoreLocomotion();
+        if (cooking && journal.collection.AllCollected && target == journal.homeDestination)
+            cooking.BeginCooking();
     }
 
     private IEnumerator TeleportUnderBlack(Transform target)
